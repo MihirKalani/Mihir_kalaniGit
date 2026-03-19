@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 3px solid black;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Assignment 2
+      </caption>
+      <thead>
+        <tr>
+          <td>Item</td>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="4">Footer Of table</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Pencils</td>
+          <td>2</td>
+          <td>$1</td>
+          <td>$2</td>
+        </tr>
+        <tr>
+          <td>Eraser</td>
+          <td>4</td>
+          <td rowspan="2">$0.50</td>
+          <td>$2</td>
+        </tr>
+        <tr>
+          <td colspan="2">SubTotal</td>
+          <td>$4</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>10%</td>
+          <td colspan="2">$0.40</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

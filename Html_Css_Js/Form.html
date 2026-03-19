@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Assignment</title>
+  </head>
+  <body>
+    <div>
+      <form action="sumbit.html" method="post">
+        <fieldset>
+          <legend><b>Personal Information</b></legend>
+          <label for="Field"> <u>Field</u> </label>
+          <div>
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              required
+              placeholder="First Name_Last Name"
+            />
+          </div>
+          <div>
+            <label for="aboutYourself">About YourSelf</label>
+            <textarea
+              name="aboutYourself"
+              id="aboutYourself"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <div>
+            <label for="Email Address">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter Your Email Address"
+            />
+          </div>
+          <div>
+            <label for="Password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Enter Your Password"
+              minlength="8"
+            />
+          </div>
+          <div>
+            <label for="Phone Number">Phone Number</label>
+            <input
+              maxlength="10"
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="Enter Your Phone Number"
+              pattern="[0-9]{10}"
+            />
+          </div>
+          <div>
+            <label for="website">Website</label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="Enter Your Website URL"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><b>Skills and Preferences</b></legend>
+          <div>
+            <select name="skills" id="skills">
+              <option value="html" selected>HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JavaScript</option>
+            </select>
+          </div>
+          <div>
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              required
+              checked
+            />
+            <label for=" female">Female</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            />
+          </div>
+          <div>
+            <label for="Color">Preferred Color:</label>
+            <input
+              type="color"
+              id="Color"
+              name="Color"
+              value="#0000ff"
+              required
+            />
+          </div>
+          <div>
+            <label for="experience">Experience Level</label>
+            <input
+              type="range"
+              id="experience"
+              name="experience"
+              min="0"
+              max="10"
+              step="2"
+            />
+          </div>
+          <div>
+            <label for="search">Search Interest</label>
+            <input type="search" name="search" id="search" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><b>Date & Time Inputs</b></legend>
+          <label for="date">Date of Birth</label>
+          <input type="date" id="date" name="date" max="2005-12-31" required />
+          <div>
+            <label for="available">Available Time</label>
+            <input
+              type="time"
+              id="available"
+              name="available"
+              min="09:00"
+              max="18:50"
+              required
+            />
+          </div>
+          <div>
+            <label for="Joining month">Joining Month</label>
+            <input
+              type="date"
+              id="joining-month"
+              name="joining-month"
+              value="2026-01-09"
+              required
+            />
+          </div>
+          <div>
+            <label for="Trainning Week">Training Week</label>
+            <input
+              type="week"
+              id="training-week"
+              name="training-week"
+              required
+              value="2026-W07"
+            />
+          </div>
+          <div>
+            <label for="Interview Slot">Interview Slot</label>
+            <input
+              type="datetime-local"
+              id="interview-slot"
+              name="interview-slot"
+              required
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><b>Selection & Upload</b></legend>
+          <div>
+            <label for="Technology">Technology</label>
+            <input type="checkbox" id="net" name="technology" value=".net" />
+            <label for="net">.Net</label>
+            <input
+              type="checkbox"
+              id="Angular"
+              name="technology"
+              value="Angular"
+            />
+            <label for="Angular">Angular</label>
+            <input type="checkbox" id="java" name="technology" value="java" />
+            <label for="java">Java</label>
+            <input
+              type="checkbox"
+              id="reactjs"
+              name="technology"
+              value="Reactjs"
+            />
+            <label for="reactjs">Reactjs</label>
+            <input type="checkbox" id="qa" name="technology" value="QA" />
+            <label for="qa">QA</label>
+          </div>
+          <div>
+            <label for="resume">Upload Resume</label>
+            <input
+              type="file"
+              id="resume"
+              name="resume"
+              accept=".pdf,.doc,.docx"
+              required
+            />
+          </div>
+        </fieldset>
+        <input type="text" name="user-id" value="1" hidden />
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <div>
+          <button type="reset">Reset</button>
+        </div>
+        <div>
+          <button type="button">Button</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

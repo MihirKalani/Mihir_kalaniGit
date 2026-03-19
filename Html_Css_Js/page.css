@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../Fonts/RobotoCondensed-Italic-VariableFont_wght.ttf");
+}
+
+body {
+  /* background-color: rgb(3, 255, 247); */
+  /* background-color: #add8e6; */
+  /* background-image: url(./images/skyblueimage.jpg); */
+  background-image: url(../HTML/images/skyblueimage.jpg);
+  /* font-family: Arial, sans-serif; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* h1, h2 {
+    margin-top: 0;
+} */
+
+.firstparagraph {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "MyFont";
+  /* font-style: italic; */
+  /* text-transform: uppercase; */
+  font-variant: small-caps;
+  font-weight: 550;
+}
+
+.firstparagraph span {
+  /* font-weight: 900; */
+  /* font-style: normal; */
+  text-transform: uppercase;
+}
+
+.decorative {
+  font-family: "Times New Roman", Times, serif;
+  margin: 30px;
+  text-align: center;
+  color: red;
+  text-decoration: overline;
+  text-decoration-color: green;
+  text-shadow: 2px 2px 5px green;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.visible {
+  width: 200px;
+  height: 150px;
+  border: 2px solid black;
+  /* padding: 0; */
+  /* padding-top: ; */
+  overflow: visible;
+}
+
+/* .visible p{ */
+/* padding: 0; */
+/* margin: 0; */
+/* } */
+
+.maindiv p {
+  margin: 0;
+}
+
+.clipped {
+  margin-top: 25px;
+  width: 200px;
+  height: 150px;
+  border: 2px solid black;
+  overflow: clip;
+}
+
+.scrolls {
+  margin-top: 25px;
+  width: 200px;
+  height: 150px;
+  border: 2px solid black;
+  overflow: scroll;
+}
+
+.auto {
+  margin-top: 25px;
+  width: 200px;
+  height: 150px;
+  border: 2px solid black;
+  overflow: auto;
+}
