@@ -1,23 +1,25 @@
-// Take user input
-let name = prompt("Enter your name:");
-let age = Number(prompt("Enter your age:"));
-let purchaseAmount = Number(prompt("Enter purchase amount:"));
+
+const name = "Mihir"
+const age = 18
+let purchaseAmount = 10000
 
 let discount = 0;
+if(age <= 18){
+    purchaseAmount = purchaseAmount - purchaseAmount*0.1
+    console.log(purchaseAmount)
+    discount = 10
+    console.log(discount)
+    }
 
-if (age < 18) {
-  discount += 10;
-} else if (age >= 60) {
-  discount += 20;
+else if(age >= 60){
+    purchaseAmount = purchaseAmount - purchaseAmount*0.2
+    discount = 20
+
 }
+    
+if(purchaseAmount >= 5000){
+        purchaseAmount = purchaseAmount - purchaseAmount*0.05
+        discount += 5
+    }
 
-if (purchaseAmount > 5000) {
-  discount += 5;
-}
-
-let finalAmount = purchaseAmount - (purchaseAmount * discount) / 100;
-
-// Output using template literals
-console.log(
-  `Hi ${name}! You received a total discount of ${discount}%. Final amount: ₹${finalAmount}`,
-);
+console.log(`Hi ${name}! You received a total discount of ${discount}%. Final amount: ₹${purchaseAmount}`)
